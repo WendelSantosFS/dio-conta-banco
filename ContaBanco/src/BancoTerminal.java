@@ -2,11 +2,15 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class BancoTerminal {
+    String onlyName;
     public static void main(String[] args) {
        String nomeClient;
        String agencia;
        int numeroConta;
        double saldo;
+
+
+
 
        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
@@ -26,7 +30,6 @@ public class BancoTerminal {
         "Olá " + nomeClient + ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numeroConta +
                 " e seu saldo R$" + saldo + " já está disponível para saque."
         );
-
 
     }
 }
